@@ -1,19 +1,13 @@
 <!DOCTYPE html>	
 <html>
 <head>
-	<title>Ye Olde Women Names</title>
-	
+	<title>Ye Olde Women Random Name Generator</title>
 	<script type="text/javascript">	
 		function generator(){
-			
-			var wordlist1 = ["Ada","Adelaide","Adelia","Adeline","Agatha","Agnes","Alberta","Alma","Anastasia","Antonia","Augusta","Beatrice","Blanche","Celia","Clara","Constance","Cora","Cordelia","Cornelia","Dora","Dorothea","Edith","Elsa","Elsia","Esther","Etta","Eudora","Eugenia","Evelyn","Fay","Flora","Florence","Frances","Frederica","Geraldine","Harriet","Hazel","Helen","Henrietta","Hermione","Ida","Imogen","Iris","Ivy","Josephine","Kay","Lavinia","Leonora","Letitia","Lucasta","Lucinda","Lucretia","Mabel","Mamie","Martha","Matilda","Maude","May","Mildred","Millicent","Minerva","Miriam","Muriel","Myrtle","Olive","Opal","Pearl","Penelope","Priscilla","Prudence","Ruth","Theodora","Ursula","Vera","Viola","Vivian","Wilhemine","Winifred","Zenobia"];
-
-			
+			var wordlist1 = ["Ada", "Adelaide", "Adelia", "Adeline", "Agatha", "Agnes", "Alberta", "Alma", "Anastasia", "Antonia", "Augusta", "Beatrice", "Blanche", "Celia", "Clara", "Constance", "Cora", "Cordelia", "Cornelia", "Dora", "Dorothea", "Edith", "Elsa", "Elsia", "Esther", "Etta", "Eudora", "Eugenia", "Evelyn", "Fay", "Flora", "Florence", "Frances", "Frederica", "Geraldine", "Harriet", "Hazel", "Helen", "Henrietta", "Hermione", "Ida", "Imogen", "Iris", "Ivy", "Josephine", "Kay", "Lavinia", "Leonora", "Letitia", "Lucasta", "Lucinda", "Lucretia", "Mabel", "Mamie", "Martha", "Matilda", "Maude", "May", "Mildred", "Millicent", "Minerva", "Miriam", "Muriel", "Myrtle", "Olive", "Opal", "Pearl", "Penelope", "Priscilla", "Prudence", "Ruth", "Theodora", "Ursula", "Vera", "Viola", "Vivian", "Wilhemine", "Winifred", "Zenobia"];
 			var randomNumber1 = parseInt(Math.random() * wordlist1.length);
 			var name = wordlist1[randomNumber1];			
-			
-			//alert(name); 
-			
+				//alert(name); 
 			if(document.getElementById("result")){
 				document.getElementById("placeholder").removeChild(document.getElementById("result"));
 			}
@@ -23,9 +17,6 @@
 			document.getElementById("placeholder").appendChild(element);
 		}		
 	</script>
-	
-	
-	
 	<style type="text/css">
 		body{font-family: arial, serif;}
 		#wrapper{border-left:1px solid #cccccc;border-right:1px solid #cccccc;margin:0 auto;padding: 0 20px;width: 700px}
@@ -34,12 +25,9 @@
 		#footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
 		#footer a{color:#999}
 	</style>
-	
-	
 </head>
 <body onload="generator()">
 	<div id="wrapper">
-		
 		<div id="generator" >
 			<div id="placeholder"></div>
 			<input type="button" value="Make name" onclick="generator()" />		
